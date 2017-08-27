@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>New York Times API Classwork</title>
+    <!-- link bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--link to local css-->
+    <!--link to jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--link font awesome for glyph icon-->
+    <script src="https://use.fontawesome.com/38537d2a0e.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron text-center" style="background-color:rgb(51,122,183); margin-top: 20px; color:white;"><h1><i class="fa fa-newspaper-o"></i> New York Times Search</span></h1></div>
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Search Parameters</h3>
+        </div>
+        <div class="panel-body">
+            <div class="input-group col-xs-12">
+                <h5>Search Term:</h5>
+                <input id="searchTerm" type="text" class="form-control"  aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="panel-body form-group">
+            <label id="resultsNumber" for="disabledSelect"><h5>Number of Records to Retrieve</h5></label>
+            <select id="disabledSelect" class="form-control">
+                <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+
+        <div class="panel-body">
+            <div class="input-group col-xs-12">
+                <h5>Start Year:</h5>
+                <input id="startYear" type="text" class="form-control"  aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="input-group col-xs-12">
+                <h5>End Year:</h5>
+                <input id="endYear" type="text" class="form-control"  aria-describedby="basic-addon1">
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Search</button>
+            <button type="button" class="btn btn-primary" style="margin-top: 10px;">Clear Results</button>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Top Articles</h3>
+        </div>
+        <div id="articles" class="panel-body">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
